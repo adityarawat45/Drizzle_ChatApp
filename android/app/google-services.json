@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "640201879766",
+    "project_id": "drizzle-790b6",
+    "storage_bucket": "drizzle-790b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640201879766:android:afd2f1d843062e724dd977",
+        "android_client_info": {
+          "package_name": "com.example.drizzle0"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3YIJ37naeCVTdaYGPNEz1x6gAGIVIXUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

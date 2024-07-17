@@ -60,8 +60,8 @@ class Chatbubble extends StatelessWidget {
         context: context,
         builder: (context) => AlertDialog(
           backgroundColor: const Color.fromARGB(255, 6, 18, 24),
-          titleTextStyle: TextStyle(color: Colors.grey),
-          contentTextStyle: TextStyle(color: Colors.grey),
+          titleTextStyle: const TextStyle(color: Colors.grey),
+          contentTextStyle: const TextStyle(color: Colors.grey),
               title: "Report message".text.make(),
               content: "Are you sure?".text.make(),
               actions: [
@@ -92,9 +92,9 @@ class Chatbubble extends StatelessWidget {
         builder: (context) => AlertDialog(
               title: "Block User".text.make(),
               content: "Are you sure?".text.make(),
-               titleTextStyle: TextStyle(color: Colors.grey),
+               titleTextStyle: const TextStyle(color: Colors.grey),
                backgroundColor: const Color.fromARGB(255, 6, 18, 24),
-          contentTextStyle: TextStyle(color: Colors.grey),
+          contentTextStyle: const TextStyle(color: Colors.grey),
               actions: [
                 TextButton(
                     onPressed: () {
@@ -132,14 +132,14 @@ class Chatbubble extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.inverseSurface,
                   borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(12),
-                      bottomRight: Radius.circular(12),
+                      bottomLeft: const Radius.circular(12),
+                      bottomRight: const Radius.circular(12),
                       topRight: isCurrentUser
-                          ? Radius.circular(0)
-                          : Radius.circular(12),
+                          ? const Radius.circular(0)
+                          : const Radius.circular(12),
                       topLeft: isCurrentUser
-                          ? Radius.circular(12)
-                          : Radius.circular(0))),
+                          ? const Radius.circular(12)
+                          : const Radius.circular(0))),
               child: message.text
                   .color(Theme.of(context).colorScheme.inversePrimary)
                   .medium

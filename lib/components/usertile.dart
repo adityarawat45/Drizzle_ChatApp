@@ -24,9 +24,9 @@ class _UserTileState extends State<UserTile> {
           ),
           child: Row(
             children: [
-              WidthBox(5),
+              const WidthBox(5),
               Icon(Icons.person_2_sharp, size: 34,color: Theme.of(context).colorScheme.inversePrimary,).py20().px8(),
-              WidthBox(10),
+              const WidthBox(10),
               widget.username.text.size(15).semiBold.color(Theme.of(context).colorScheme.inversePrimary).medium.make()
             ],
           )).px12().pOnly(top: 6)

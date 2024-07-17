@@ -1,10 +1,8 @@
 import 'package:drizzle0/components/button.dart';
 import 'package:drizzle0/components/textfield.dart';
 import 'package:drizzle0/services/Auth/auth.dart';
-import 'package:drizzle0/themes/themeprovider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class Login extends StatefulWidget {

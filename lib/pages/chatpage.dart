@@ -64,7 +64,7 @@ class _ChatpageState extends State<Chatpage> {
             return const Text("Error");
           }
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Loader();
+            return const Loader();
           }
 
           return ListView(

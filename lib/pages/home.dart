@@ -5,9 +5,8 @@ import 'package:drizzle0/services/Auth/Auth.dart';
 import 'package:drizzle0/components/drawer.dart';
 import 'package:drizzle0/services/Chat/chatservice.dart';
 
-import 'package:drizzle0/themes/themeprovider.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+
 import 'package:velocity_x/velocity_x.dart';
 
 class HomePage extends StatefulWidget {
@@ -22,10 +21,8 @@ void logout() {
   auth.signOut();
 }
 
-
 final ChatService _chatService = ChatService();
 final Auth _auth = Auth();
-
 
 class _HomePageState extends State<HomePage> {
   @override
@@ -67,7 +64,7 @@ class _HomePageState extends State<HomePage> {
             return const Text("Error");
           }
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Loader();
+            return const Loader();
           }
           return ListView(
             children: snapshot.data!

@@ -1,16 +1,15 @@
-# drizzle0
+Drizzle
 
-A new Flutter project.
+Drizzle a modern and minimal looking fully functional cross-platform chat application based on flutter with the most aesthetic and clean looking UI.
 
-## Getting Started
+You can clone my repo, but make sure to initialize a firebase project of your own.
 
-This project is a starting point for a Flutter application.
+Have a look at the App : 
 
-A few resources to get you started if this is your first Flutter project:
+![Image description](samplepics/login.jpg)
+![Image description](samplepics/home.jpg)
+![Image description](samplepics/chat.jpg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+

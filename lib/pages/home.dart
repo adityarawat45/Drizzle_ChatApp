@@ -1,7 +1,7 @@
 import 'package:drizzle0/components/loader.dart';
 import 'package:drizzle0/pages/chatpage.dart';
 import 'package:drizzle0/components/usertile.dart';
-import 'package:drizzle0/services/Auth/Auth.dart';
+import 'package:drizzle0/services/Auth/auth.dart';
 import 'package:drizzle0/components/drawer.dart';
 import 'package:drizzle0/services/Chat/chatservice.dart';
 

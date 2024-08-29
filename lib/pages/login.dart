@@ -16,22 +16,22 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   final TextEditingController _username = TextEditingController();
- 
   void login(BuildContext context) async {
-
     final auth = Auth();
 
     try {
       await auth.signInWithEmailPassword(_username.text, _pw.text);
     } catch (e) {
-      return showDialog(
-          // ignore: use_build_context_synchronously
-          context: context,
-          builder: (context) => AlertDialog(
-            backgroundColor: Vx.gray300,
-            
-                title: e.toString().text.color(Vx.black).size(14).make(),
-              ));
+      // Check if the widget is still mounted before showing the dialog
+      if (!context.mounted) return;
+
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          backgroundColor: Vx.gray300,
+          title: e.toString().text.color(Vx.black).size(14).make(),
+        ),
+      );
     }
   }
 
